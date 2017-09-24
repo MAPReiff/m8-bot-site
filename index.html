@@ -73,7 +73,7 @@
           <div class="intro-text">
             <h1 class="name">M8 Bot</h1>
             <hr class="star-light">
-            <span class="skills">Your Discord Companion For Mixer</span>
+            <span class="skills">Your Discord Companion For Twitch & Mixer</span>
           </div>
         </div>
       </div>
@@ -135,10 +135,10 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-lg-offset-2">
-          <p>M8 Bot is a Discord bot that allows Mixer streamers to have their streams announced in their Discord servers.</p>
+          <p>M8 Bot is a Discord bot that allows Twitch & Mixer streamers to have their streams announced in their Discord servers.</p>
         </div>
         <div class="col-lg-4">
-          <p>In addition to Mixer streams, M8 Bot has a plethora of other commands to spice up your discord server.</p>
+          <p>In addition to Twitch & Mixer streams, M8 Bot has a plethora of other commands to spice up your discord server.</p>
         </div>
         <div class="col-lg-8 col-lg-offset-2 text-center">
           <a href="http://invitem8.comixsyt.space" class="btn btn-lg btn-outline">
@@ -230,15 +230,21 @@
               <li style="text-align: left">In order to test the bot, simply type "!ping" into any chat where the bot can see it, and reply.</li>
               <li style="text-align: left">If the bot replies to your message, all is good!</li>
               <p></p>
-              <p style="text-align: left"><b>Step 3: Setting Up Streamers (Optional)</b></p>
-              <li style="text-align: left">Navigate to the chat channel where you want the bot to announce the streamer(s).</li>
-              <li style="text-align: left">In the chat, type "!add-streamer" followed by the streamer's Mixer name. For example, "!add-streamer ComixsYT".</li>
-              <li style="text-align: left">After, type "!mystreamers" to get a list of the streamers assigned to that chat channel. If the new streamer is there, you are done.</li>
+              <p style="text-align: left"><b>Step 3a: Setting Up Mixer Streamers (Optional)</b></p>
+              <li style="text-align: left">Navigate to the chat channel where you want the bot to announce the Mixer streamer(s).</li>
+              <li style="text-align: left">In the chat, type "!add-streamer-mixer" followed by the streamer's Mixer name. For example, "!add-streamer ComixsYT".</li>
               <p></p>
-              <p style="text-align: left"><b>Step 3.5: Removing Streamers (Optional)</b></p>
+              <p style="text-align: left"><b>Step 3b: Setting Up Twitch Streamers (Optional)</b></p>
+              <li style="text-align: left">Navigate to the chat channel where you want the bot to announce the Twitch streamer(s).</li>
+              <li style="text-align: left">In the chat, type "!add-streamer-twitch" followed by the streamer's Twitch name. For example, "!add-streamer ComixsYT".</li>
+              <p></p>
+              <p style="text-align: left"><b>Step 3.5a: Removing Mixer Streamers (Optional)</b></p>
               <li style="text-align: left">Navagate to the chat channel where you want to stop the accouncements.</li>
-              <li style="text-align: left">In the chat, type "!del-streamer" followed by the streamer's Mixer name. For example, "!del-streamer ComixsYT".</li>
-              <li style="text-align: left">After, type "!mystreamers" to get a list of the streamers assigned to that chat channel. If the streamer is no longer there, you are done.</li>
+              <li style="text-align: left">In the chat, type "!del-streamer-mixer" followed by the streamer's Mixer name. For example, "!del-streamer ComixsYT".</li>
+              <p></p>
+              <p style="text-align: left"><b>Step 3.5b: Removing Twitch Streamers (Optional)</b></p>
+              <li style="text-align: left">Navagate to the chat channel where you want to stop the accouncements.</li>
+              <li style="text-align: left">In the chat, type "!del-streamer-twitch" followed by the streamer's Twitch name. For example, "!del-streamer ComixsYT".</li>
               <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
           </div>
@@ -261,7 +267,7 @@
               <h2>Commands</h2>
               <hr class="star-primary">
               <p>In addition to stream announcements, M8 Bot has some commands that are sure to spruce up your discord!</p>
-              <p>Help for M8 Bot as of 6/14/17</p>
+              <p>Help for M8 Bot as of 9/24/17</p>
               <ul>
                 <li style="text-align: left">!help m8bot - Sends this help Message.</li>
                 <li style="text-align: left">!ping - Used to test if the bot is listening. A response should appear and then disappear along with the command.</li>
@@ -281,9 +287,9 @@
                 <li style="text-align: left">!tank - GTFO of my way I got a fucking tank!</li>
                 <li style="text-align: left">!hug/!hugs - Wanna give someone a hug? Do it then!</li>
                 <li style="text-align: left">!m8bug - Returns a link to report bugs.</li>
-                <li style="text-align: left">!add-streamer/!del-streamer - Used to add or delete streamers from that chat channel. Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
-                <li style="text-align: left">!allstreamers - Lists all the streamers that the bot stalks.</li>
-                <li style="text-align: left">!mystreamers - Lists all the streamers registered to that chat channel.</li>
+                <li style="text-align: left">!add-streamer-mixer/!del-streamer-mixer - Used to add or delete Mixer streamers from that chat channel. Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
+                <li style="text-align: left">!add-streamer-twitch/!del-streamer-twitch - Used to add or delete Twitch streamers from that chat channel. Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
+                <li style="text-align: left">(Currently Broken) !mystreamers - Lists all the streamers registered to that chat channel.</li>
                 <li style="text-align: left">!mixer - Gets info about a mixer user. Usage - !mixer NAME</li>
                 <li style="text-align: left">!ping-on/!ping-off - Allows a server owner/admin to decide whether or not M8 Bot can use @here in that channel. The default is on.</li>
                 <li style="text-align: left">!insult @name - Used to insult another user.</li>
@@ -316,7 +322,7 @@
               <h2>Help</h2>
               <hr class="star-primary">
               <p>We are so sorry that there is something wrong with M8 Bot.</p>
-              <p>The best way to get help is to join our Discord server. Click <a href="https://discord.gg/ayZKFej">here</a> to join, and message a Meme Dev in the #m8-support chat.
+              <p>The best way to get help is to join our Discord server. Click <a href="https://discord.me/m8bot">here</a> to join, and message a Dev in the #support chat.
                 <p>
                   <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
