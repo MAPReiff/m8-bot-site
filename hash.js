@@ -21,3 +21,11 @@ $(document).ready(function() {
   }
 
 });
+
+$(document).ready(function() {
+
+  if (window.location.href.indexOf('#Zamasu') != -1) {
+    $('#Zamasu').modal('show');
+  }
+
+});
