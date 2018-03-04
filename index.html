@@ -307,6 +307,17 @@
                                         <li style="text-align: justify;">welcomeMessage - the message sent in the welcome channel when a new user joins. The
                                             default is "Welcome {{user}} to the {{serverName}} server! There are now {{memberCount}}
                                             members in this server. Enjoy your stay."</li>
+                                        <ul>
+                                            <li style="text-align: justify;">{{user}} is automaticaly replaced with the new member's name.</li>
+                                            <li style="text-align: justify;">{{serverName}} is automaticaly replaced with the server's name.</li>
+                                            <li style="text-align: justify;">{{memberCount}} is automaticaly replaced with the number of users now in the
+                                                server.
+                                            </li>
+                                            <li style="text-align: justify;">Setting the welcomeMessage to "Welcome IMG" (without quotes) will post an image
+                                                <a href="img/welcome.png">like this</a> instead of a message.</li>
+
+
+                                        </ul>
                                         <li style="text-align: justify;">welcomeEnabled - whether&nbsp;or not the welcomeMessage is enabled. Default is "false"</li>
                                         <li style="text-align: justify;">defaultRole - the default role users are assigned when they join the server. Default
                                             is "Member"</li>
@@ -389,7 +400,7 @@
                             <hr class="star-primary">
                             <p>In addition to stream announcements, M8 Bot has some commands that are sure to spruce up your
                                 discord! Commands here are shown with the default prefix!</p>
-                            <p>Help for M8 Bot as of 2/25/18</p>
+                            <p>Help for M8 Bot as of 3/4/18</p>
                             <div style="text-align: justify;">General Bot:</div>
                             <div style="text-align: justify;">
                                 <ul>
@@ -416,16 +427,11 @@
                                 Live Streams:</div>
                             <div style="text-align: justify;">
                                 <ul>
-                                    <li>!
-                                        <g class="gr_ gr_62 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="62" data-gr-id="62">addmixer</g> or !
-                                        <g class="gr_ gr_63 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="63" data-gr-id="63">delmixer</g> - Used to add or delete Mixer streamers from that chat channel. Can
-                                        only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
-                                    <li>!
-                                        <g class="gr_ gr_64 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="64" data-gr-id="64">addtwitch</g> or !
-                                        <g class="gr_ gr_65 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="65" data-gr-id="65">deltwitch</g> - Used to add or delete Twitch streamers from that chat channel. Can
-                                        only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
-                                    <li>!
-                                        <g class="gr_ gr_66 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="66" data-gr-id="66">mystreamers</g> - Lists all the streamers registered to that chat channel.</li>
+                                    <li>!addmixer or !delmixer - Used to add or delete Mixer streamers from that chat channel.
+                                        Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
+                                    <li>!addtwitch or !deltwitch - Used to add or delete Twitch streamers from that chat channel.
+                                        Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
+                                    <li>!mystreamers - Lists all the streamers registered to that chat channel.</li>
                                 </ul>
                             </div>
                             <div style="text-align: justify;">Information:</div>
@@ -437,8 +443,7 @@
                                 Economy:</div>
                             <div style="text-align: justify;">
                                 <ul>
-                                    <li>!balance or !
-                                        <g class="gr_ gr_71 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="71" data-gr-id="71">bal</g>&nbsp;- Gets your current balance of Glix and cooldown timers.</li>
+                                    <li>!balance or !>bal - Gets your current balance of Glix and cooldown timers.</li>
                                     <li>!work - Work for Glix. Uses the Earnings Cooldown (30 min)</li>
                                     <li>!crime - Commit crimes for Glix. Higher payout&nbsp;than work, but a high risk of it
                                         failing. Uses the Earnings Cooldown (30 min)</li>
@@ -450,20 +455,14 @@
                             <div style="text-align: justify;">Misc:</div>
                             <div style="text-align: justify;">
                                 <ul>
-                                    <li style="text-align: left;">!pun or !
-                                        <g class="gr_ gr_73 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="73" data-gr-id="73">dadjoke</g> - Sends a funny pun courtesy of murfGUY's
-                                        <g class="gr_ gr_74 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="74" data-gr-id="74">dadjoke</g> database.</li>
-                                    <li style="text-align: left;">!
-                                        <g class="gr_ gr_75 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="75" data-gr-id="75">cn</g> or !chuck - Pulls a random Chuck Norris fact.</li>
+                                    <li style="text-align: left;">!pun or !dadjoke - Sends a funny pun courtesy of murfGUY's dadjoke database.</li>
+                                    <li style="text-align: left;">!cn or !chuck - Pulls a random Chuck Norris fact.</li>
                                     <!-- <li style="text-align: left">!blamecomixs - Used whenever ComixsYT does something stupid and must be blamed!</li> -->
                                     <!-- <li style="text-align: left">!unblamecomixs - Used whenever ComixsYT does something good and must be unblamed!</li> -->
-                                    <li style="text-align: left;">! lenny - ( ͡&deg; ͜ʖ ͡&deg;)</li>
-                                    <li style="text-align: left;">!
-                                        <g class="gr_ gr_69 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="69" data-gr-id="69">ascii</g> - Gets whatever you typed after !
-                                        <g class="gr_ gr_70 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="70" data-gr-id="70">ascii</g> and makes it into ASCII art.</li>
+                                    <li style="text-align: left;">!lenny - ( ͡° ͜ʖ ͡°)</li>
+                                    <li style="text-align: left;">!ascii - Gets whatever you typed after !ascii and makes it into ASCII art.</li>
                                     <li style="text-align: left;">!urban or !define - Get the urban definition of a word.</li>
-                                    <li style="text-align: left;">!
-                                        <g class="gr_ gr_72 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="72" data-gr-id="72">lmgthf</g> or !google - Gets a Let Me Google That For You link for any term you want.</li>
+                                    <li style="text-align: left;">!lmgthf or !google - Gets a Let Me Google That For You link for any term you want.</li>
                                     <!-- <li style="text-align: left">!mfinger - Allows you to give the finger that is located in the middle of our appendages to others.</li> -->
                                     <!-- <li style="text-align: left">!fail - For when someone seriously fails.</li> -->
                                     <!-- <li style="text-align: left">!pepe - Who doesn’t love Pepe?</li> -->
@@ -505,9 +504,16 @@
                                 <li style="text-align: justify;">!stepped&nbsp;[@person]</li>
                                 <li style="text-align: justify;">!steamcard&nbsp;[@person]</li>
                                 <li style="text-align: justify;">!facepalm&nbsp;[@person]</li>
-                                <li>
+                                <li style="text-align: justify;">!search&nbsp;[text]</li>
+                                <li style="text-align: justify;">!bobross&nbsp;[@person]</li>
+                                <li style="text-align: justify;">!scare&nbsp;[@person]</li>
+                                <li style="text-align: justify;">!fear&nbsp;[@person]</li>
+                                <li style="text-align: justify;">!waifu&nbsp;[@person]</li>
+                                <li style="text-align: justify;">!killer-painting&nbsp;[@person]</li>
+
+                                <!-- <li>
                                     <div style="text-align: justify;">!search [text]</div>
-                                </li>
+                                </li> -->
                                 <!-- Template:
                 <li style="text-align: left">!command - Info.</li>
               -->
