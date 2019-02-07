@@ -284,8 +284,8 @@
                                 <strong>Requirements:</strong>
                             </p>
                             <ul style="text-align: justify;">
-                                <li>Have a discord account</li>
-                                <li>Have a discord&nbsp;server (or have admin permission on one)</li>
+                                <li>Have a Discord account</li>
+                                <li>Have a Discord server (or have admin permission on one)</li>
                                 <li>Some kind of web browser</li>
                             </ul>
                             <p style="text-align: justify;">
@@ -305,62 +305,36 @@
                                 </li>
                                 <li>If the bot replies to your message, all is good!
                                     <ul>
-                                        <li>If not, please make sure the bot has proper permissions to chat!</li>
+                                        <li>If not, please make sure the bot has proper permissions to chat before you continue!</li>
                                     </ul>
                                 </li>
                             </ul>
-                            <p style="text-align: justify;">
-                                <strong>Step 3:&nbsp;Configuring Custom Options (Optional)</strong>
-                            </p>
+                            <p style="text-align: left;"><strong>Step 3: Configuring Custom Options (Optional)</strong></p>
                             <ul>
-                                <li style="text-align: justify;">At the current moment, the available options are:
+                                <li style="text-align: left;">At the current moment, the available options are:
                                     <ul>
-                                        <li style="text-align: justify;">prefix - the&nbsp;prefix for all M8 Bot commands in your server. The default is "!"</li>
-                                        <li style="text-align: justify;">modLogChannel - the channel where moderation actions are logged. The default is "mod-log"</li>
-                                        <li style="text-align: justify;">modRole&nbsp;- the role that is allowed to run low-level mod commands.&nbsp;The default
-                                            is "Moderator"</li>
-                                        <li style="text-align: justify;">adminRole&nbsp;- the role that is allowed to run high-level mod commands. The default
-                                            is "Administrator"</li>
-                                        <li style="text-align: justify;">systemNotice - this gives a notice when a user tries to run a command that they do
-                                            not have permission to use. The default is "true"</li>
-                                        <li style="text-align: justify;">welcomeChannel&nbsp;- the channel where welcome messages are sent. Default is "welcome"</li>
-                                        <li style="text-align: justify;">welcomeMessage - the message sent in the welcome channel when a new user joins. The
-                                            default is "Welcome {{user}} to the {{serverName}} server! There are now {{memberCount}}
-                                            members in this server. Enjoy your stay."</li>
-                                        <ul>
-                                            <li style="text-align: justify;">{{user}} is automaticaly replaced with the new member's name.</li>
-                                            <li style="text-align: justify;">{{serverName}} is automaticaly replaced with the server's name.</li>
-                                            <li style="text-align: justify;">{{memberCount}} is automaticaly replaced with the number of users now in the
-                                                server.
-                                            </li>
-                                            <li style="text-align: justify;">Setting the welcomeMessage to "Welcome IMG" (without quotes) will post an image
-                                                <a href="img/welcome.png">like this</a> instead of a message.</li>
-
-
-                                        </ul>
-                                        <li style="text-align: justify;">welcomeEnabled - whether&nbsp;or not the welcomeMessage is enabled. Default is "false"</li>
-                                        <li style="text-align: justify;">defaultRole - the default role users are assigned when they join the server. Default
-                                            is "Member"</li>
-                                        <li style="text-align: justify;">defaultRoleEnabled - whether or not the defaultRole is enabled. Default is "false"</li>
-                                        <li style="text-align: justify;">bannedWords&nbsp;- list of banned words, separated with ", ". Default is "Bad_word_here"
-                                            <ul>
-                                                <li style="text-align: justify;">Currently disabled due to some config issues!</li>
-
-                                                <li style="text-align: justify;">For example, if you want to ban "wow", "cool" and "Zamasu did nothing wrong",
-                                                    the list would look like "wow, cool, Zamasu did nothing wrong".</li>
-                                                <li style="text-align: justify;">People with the adminRole&nbsp;can bypass this ban.</li>
-                                            </ul>
+                                        <li>livePing - whether or not the bot will use @here to announce live streams. Default is "true" or
+                                            "Enabled".</li>
+                                        <li>disabledCommands - commands that are disabled in your server. Default is "None".</li>
+                                        <li>defaultRole - the role automatically given to new members when they join your server. Default is "null"
+                                            (none).</li>
+                                        <li>mod - the role of your server's moderators. People with this role can use moderator commands. Default is
+                                            "null" (none).</li>
+                                        <li>muted - your server's muted/jail role. Needed to use the mute commands. Default is "null" (none).</li>
+                                        <li>prefix - the prefix for all M8 Bot commands in your server. The default is "!".</li>
+                                        <li>modLog - your server's mod log channel. The default is "null" (none).</li>
+                                        <li>mixerLiveChannel - the channel where Mixer announcements will be posted. The default is "null" (none).
+                                        </li>
+                                        <li>twitchLiveChannel - the channel where Twitch announcements will be posted. The default is "null" (none).
                                         </li>
                                     </ul>
                                 </li>
-                                <li style="text-align: justify;">In order to view the settings, run !set</li>
-                                <li style="text-align: justify;">In order to change the settings, run !.set edit &lt;setting&gt; &lt;option&gt;, replacing
-                                    &lt;setting&gt; with the setting name, and &lt;option&gt; with the new option.</li>
-                                <li style="text-align: justify;">Settings that are true or false by default must always be either true or false.</li>
-                                <li style="text-align: justify;">Settings that ask for a channel name must be given the channel name without the # symbol,
-                                    just the name.</li>
-                                <li style="text-align: justify;">Settings that ask for a role name must be given the role name without the @ symbol, just
-                                    the name.</li>
+                                <li style="text-align: left;">In order to view the settings, run !conf view</li>
+                                <li style="text-align: left;">In order to change the settings, run !conf set {setting} {option},
+                                    replacing {setting} with the setting name, and {option} with the new option.</li>
+                                <li style="text-align: left;">Settings that are true or false (shown as Enabled and Disabled) by default must always be either true or false.</li>
+                                <li style="text-align: left;">Settings that ask for a channel name must be given the channel name with the # symbol, such as #general.</li>
+                                <li style="text-align: left;">Settings that ask for a role name must be given the role name, with or without the @ symbol, such as @Mod or Mod (case sensitive).</li>
                             </ul>
                             <p></p>
                             <p style="text-align: left">
@@ -370,7 +344,8 @@
                             <p style="text-align: left">
                                 <b>Step 4a: Setting Up Mixer Streamers (Optional)</b>
                             </p>
-                            <li style="text-align: left">Navigate to the chat channel where you want the bot to announce the Mixer streamer(s).</li>
+                            <li style="text-align: left">First, set mixerLiveChannel with !conf set mixerLiveChannel #channelName, with #channelName being the text channel you
+                            want Mixer announcements in.</li>
                             <li style="text-align: left">In the chat, type "!addmixer" followed by the streamer's Mixer name. For example, "!addmixer
                                 ComixsYT".
                             </li>
@@ -378,7 +353,8 @@
                             <p style="text-align: left">
                                 <b>Step 4b: Setting Up Twitch Streamers (Optional)</b>
                             </p>
-                            <li style="text-align: left">Navigate to the chat channel where you want the bot to announce the Twitch streamer(s).</li>
+                            <li style="text-align: left">First, set twitchLiveChannel with !conf set twitchLiveChannel #channelName, with #channelName being the text channel you
+                            want Twitch announcements in. It can be the same one as mixerLiveChannel if you want.</li>
                             <li style="text-align: left">In the chat, type "!addtwitch" followed by the streamer's Twitch name. For example, "!addtwitch
                                 ComixsYT".
                             </li>
@@ -386,29 +362,23 @@
                             <p style="text-align: left">
                                 <b>Step 4.5a: Removing Mixer Streamers (Optional)</b>
                             </p>
-                            <li style="text-align: left">Navagate to the chat channel where you want to stop the accouncements.</li>
-                            <li style="text-align: left">In the chat, type "!delmixer" followed by the streamer's Mixer name. For example, "!delmixer
-                                ComixsYT".
-                            </li>
+                            <li style="text-align: left">In the chat, type "!delmixer" followed by the streamer's Mixer name. For example, "!delmixer ComixsYT".</li>
                             <p></p>
                             <p style="text-align: left">
                                 <b>Step 4.5b: Removing Twitch Streamers (Optional)</b>
                             </p>
-                            <li style="text-align: left">Navagate to the chat channel where you want to stop the accouncements.</li>
-                            <li style="text-align: left">In the chat, type "!deltwitch" followed by the streamer's Twitch name. For example, "!deltwitch
-                                ComixsYT".
-                            </li>
+                            <li style="text-align: left">In the chat, type "!deltwitch" followed by the streamer's Twitch name. For example, "!deltwitch ComixsYT".</li>
 
                             <p></p>
-                            <p style="text-align: left">
+                            <!-- <p style="text-align: left">
                                 <b>Bellow is a video guide on how to setup M8 Bot made by
                                     <a href="https://twitch.tv/ALazyMeme">ALazyMeme</a>
                                 </b>
                             </p>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/g_kro366gUs?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
+                                <!-- the above is outdated -->
                             <p></p>
-
 
                             <button type="button" class="btn btn-default" data-dismiss="modal">
                                 <i class="fa fa-times"></i>Close</button>
@@ -434,22 +404,30 @@
                             <hr class="star-primary">
                             <p>In addition to stream announcements, M8 Bot has some commands that are sure to spruce up your
                                 discord! Commands here are shown with the default prefix!</p>
-                            <p>Help for M8 Bot as of 5/7/18</p>
+                            <p>Help for M8 Bot as of 2/7/19</p>
                             <div style="text-align: justify;">General Bot:</div>
                             <div style="text-align: justify;">
                                 <ul>
-                                    <li style="text-align: left;">!help - Sends this help Message.</li>
-                                    <li style="text-align: left;">!ping - Used to test if the bot is listening. A response should appear and then disappear
-                                        along with the command.</li>
-                                    <li style="text-align: left;">!m8status - Sends a status report of the bot.</li>
-                                    <li style="text-align: left;">!config - Allows server owners to view their configuration.</li>
-                                    <li style="text-align: left;">!config edit - Allows server owners to edit their configuration.</li>
-                                    <li>!m8bug - Returns a link to report bugs.</li>
-                                    <li>!changelog - Bot changelog.</li>
+                                    <li style="text-align: left;">!help - Sends a help message. The commands listed will be based on your permissions, and server config. If you do not have permission, of the proper server config, you will not see some commands.</li>
+                                    <li style="text-align: left;">!ping - Used to test if the bot is listening.</li>
+                                    <!-- <li style="text-align: left;">!m8status - Sends a status report of the bot.</li> -->
+                                    <li style="text-align: left;">!conf - Allows server owners to view their configuration.</li>
+                                    <ul>
+
+                                        <li style="text-align: left;">This command can only be run by those who have Administrator permissions in their Discord role.</li>
+                                        <li style="text-align: left;">!conf show - Shows the server's config.</li>
+                                        <li style="text-align: left;">!conf set {setting} {value} - Changes the server's config. {setting} is in place of teh setting name, and {value} is in place of the value you want to set the setting to.</li>
+
+                                    </ul>
+                                    <!-- <li>!m8bug - Returns a link to report bugs.</li>
+                                    <li>!changelog - Bot changelog.</li> -->
                                 </ul>
                                 Moderation:</div>
                             <div style="text-align: justify;">
                                 <ul>
+                                    <li style="text-align: left;">All of these commands can be run by anyone with the set Mod role, or server admins.</li>
+                                    <li style="text-align: left;">The [reason] value is optional in all of these commands.</li>
+                                    <li style="text-align: left;">If a mod log is setup in the server's config, the command is logged in there.</li>
                                     <li style="text-align: left;">!purge # - Deletes the last # of messages up to 100 at a time.</li>
                                     <li style="text-align: left;">!warn [@person] [reason] - Sends a warning message to a rule breaker. Saves a copy to
                                         the configured mod log channel. Configured Moderator rank and up.</li>
@@ -457,25 +435,30 @@
                                         configured mod log channel. Configured Moderator rank and up.</li>
                                     <li style="text-align: left;">!ban [@person] [reason] - Bans the rule breaker from the server. Saves a copy to the
                                         configured mod log channel. Configured Administrator rank and up.</li>
+                                    <li style="text-align: left;">!mute [time] [@person] [reason] - Mutes the mentioned user. If a time is given (optional), they will be unmuted after that time.</li>
+                                    <li style="text-align: left;">!unmute [@person] [reason] - Unmutes the mentioned user.</li>
                                 </ul>
                                 Live Streams:</div>
                             <div style="text-align: justify;">
                                 <ul>
-                                    <li>!addmixer or !delmixer - Used to add or delete Mixer streamers from that chat channel.
-                                        Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
-                                    <li>!addtwitch or !deltwitch - Used to add or delete Twitch streamers from that chat channel.
-                                        Can only be run by the server owner or anyone with the "ADMINISTRATOR" permission.</li>
+                                    <li style="text-align: left;">All of these commands can be run by anyone with the set Mod role, or server admins.</li>
+                                    <li>!addmixer or !delmixer - Used to add or delete Mixer streamers from that chat channel.</li>
+                                    <li>!addtwitch or !deltwitch - Used to add or delete Twitch streamers from that chat channel.</li>
                                     <li>!mystreamers - Lists all the streamers registered to that chat channel.</li>
                                 </ul>
                             </div>
                             <div style="text-align: justify;">Information:</div>
                             <div style="text-align: justify;">
                                 <ul>
-                                    <li style="text-align: left;">!me - Sends you information about you.</li>
-                                    <li>!mixer - Gets info about a mixer user. Usage - !mixer NAME</li>
+                                    <li style="text-align: left;">!user - Sends you information about the mentioned user (or yourself if no user is mentioned).</li>
+                                    <li>!mixer - Gets info about a Mixer user. Usage - !mixer NAME</li>
+                                    <li>!twitch - Gets info about a Twitch user. Usage - !twitch NAME</li>
+                                    <li>!steam - Gets info about a Steam game. Usage - !steam NAME</li>
+                                    <li>!anime - Gets info about an Anime. Usage - !anime NAME</li>
                                 </ul>
-                                Economy:</div>
-                            <div style="text-align: justify;">
+                                <!-- Economy:</div> -->
+                                Images</div>
+                            <!-- <div style="text-align: justify;">
                                 <ul>
                                     <li>!balance or !bal - Gets your current balance of Glix and cooldown timers.</li>
                                     <li>!work - Work for Glix. Uses the Earnings Cooldown (30 min)</li>
@@ -485,33 +468,8 @@
                                     <li>!bail or !earn-again - Resets your Earnings Cooldown for the cost of 5 Glix</li>
 
                                 </ul>
-                            </div>
-                            <div style="text-align: justify;">Misc:</div>
-                            <div style="text-align: justify;">
-                                <ul>
-                                    <li style="text-align: left;">!pun or !dadjoke - Sends a funny pun courtesy of murfGUY's dadjoke database.</li>
-                                    <li style="text-align: left;">!cn or !chuck - Pulls a random Chuck Norris fact.</li>
-                                    <!-- <li style="text-align: left">!blamecomixs - Used whenever ComixsYT does something stupid and must be blamed!</li> -->
-                                    <!-- <li style="text-align: left">!unblamecomixs - Used whenever ComixsYT does something good and must be unblamed!</li> -->
-                                    <li style="text-align: left;">!lenny - ( ͡° ͜ʖ ͡°)</li>
-                                    <li style="text-align: left;">!ascii - Gets whatever you typed after !ascii and makes it into ASCII art.</li>
-                                    <li style="text-align: left;">!urban or !define - Get the urban definition of a word.</li>
-                                    <li style="text-align: left;">!lmgthf or !google - Gets a Let Me Google That For You link for any term you want.</li>
-                                    <!-- <li style="text-align: left">!mfinger - Allows you to give the finger that is located in the middle of our appendages to others.</li> -->
-                                    <!-- <li style="text-align: left">!fail - For when someone seriously fails.</li> -->
-                                    <!-- <li style="text-align: left">!pepe - Who doesn’t love Pepe?</li> -->
-                                    <!-- <li style="text-align: left">!tank - GTFO of my way I got a fucking tank!</li> -->
-                                    <li style="text-align: left;">!hug or !hugs - Wanna give someone a hug? Do it then!</li>
-                                    <li style="text-align: left;">!spank - Wanna give someone a spanking? Do it then!</li>
-                                    <li>!steam ___ - Used get info on a steam game.</li>
-                                    <li>!anime ___ - Gets information on an anime from MAL.</li>
-                                    <li>!coin - Flips a coin.</li>
-                                    <li>!rawr - I'm a meme.</li>
-                                    <li>!ask - Get an answer to a yes or no question.</li>
-                                    <li>!blame [@person] - Blames a person for messing up, adds 1 to their blame count.</li>
+                            </div> -->
 
-                                </ul>
-                                Images (All cost 1 Glix):</div>
                             <ul>
                                 <li style="text-align: justify;">
                                     <div>!beautiful [@person]&nbsp;or !painting [@person]</div>
