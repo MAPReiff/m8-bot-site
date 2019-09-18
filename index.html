@@ -20,13 +20,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="M8 Bot is a Mixer & Twitch live stream announcement bot for Discord. In addition to stream announcments, M8 Bot has a slew of other features.">
+    <!-- <meta name="description" content="M8 Bot is a Mixer & Twitch live stream announcement bot for Discord. In addition to stream announcments, M8 Bot has a slew of other features.">
     <meta name="author" content="Mitchell Reiff">
-    <meta name="keywords" content="Discord, Twitch, Mixer, Stream, Live Streams, Stream Announcements, M8 Bot, Discord Bot, M8, Bot, Twitch Streams, Mixer Streams">
+    <meta name="keywords" content="Discord, Twitch, Mixer, Stream, Live Streams, Stream Announcements, M8 Bot, Discord Bot, M8, Bot, Twitch Streams, Mixer Streams"> -->
 
-
-    <title>M8 Bot - Mixer & Twitch Live Stream Announcements In Discord</title>
-
+    <!-- <title>M8 Bot - Mixer & Twitch Live Stream Announcements In Discord</title> -->
+    <title>M8 Bot - Misc. Discord Bot</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,7 +82,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+    
     <!-- Header -->
     <header>
         <div class="container" id="maincontent" tabindex="-1">
@@ -93,7 +92,19 @@
                     <div class="intro-text">
                         <h1 class="name">M8 Bot</h1>
                         <hr class="star-light">
-                        <span class="skills">Your Discord Companion For Twitch & Mixer</span>
+                        <!-- <span class="skills">Your Discord Companion For Twitch & Mixer</span> -->
+                        <p>
+                            Back in June when I took M8 Bot over from Comixs, my plan was to stabilize Twitch and Mixer announcements and then let folks use him for what they always have. Over time, I've had to do a couple tweaks here and there - but he was always super great, and never had issues. As of late though - we hit some snags. And unfortunately, untangling them will take more time than I have to dedicate to resolving them. Going forward, M8 will no longer announce Mixer or Twitch streams. 
+                        </p>
+                        <p>
+                            However!! Couchbot is very much equipped to do just that. I've ran CouchBot for 3 years now, and he's sturdy, and he's got the blessing of Comixs as M8s announcement replacement. M8 will still continue. His meme / fun / mod commands will still continue to function. I just can't continue letting you guys hang onto the hope that I'll get around to making things 100% functional. I want everyone to have an amazing experience, and can't split my focus between the 2 bots.
+                        </p>
+                        <p style="text-align: left;">
+                            For more CouchBot info:<br /><br />
+                            <a href="http://couchbot.mattthedev.codes/" style="color: white !important;">http://couchbot.mattthedev.codes/</a> - Bot Website<br />
+                            <a href="https://couchbot.readthedocs.io/" style="color: white !important;">https://couchbot.readthedocs.io/</a> - CouchBot's Quick Install Guide and Command List<br />
+                            <a href="http://discord.mattthedev.codes/" style="color: white !important;">http://discord.mattthedev.codes/</a> - CouchBot & M8 Bot Support Discord<br />
+                        </p>
                     </div>
                 </div>
             </div>
@@ -110,16 +121,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#Setup" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
-                            </div>
-                        </div>
-                        <img src="img/info/setup.png" class="img-responsive" alt="Setup">
-                    </a>
-                </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#Commands" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -163,11 +164,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
+                <!-- <div class="col-lg-4 col-lg-offset-2">
                     <p>M8 Bot is a Discord bot that allows Twitch & Mixer streamers to have their streams announced in their
                         Discord servers. In addition to Twitch & Mixer streams, M8 Bot has a plethora of other commands to
                         spice up your discord server.</p>
-                </div>
+                </div> -->
                 <div class="col-lg-4">
                     <a href="https://discordbots.org/bot/278362996349075456">
                         <img src="https://discordbots.org/api/widget/278362996349075456.svg" alt="Discord Bots" />
@@ -265,129 +266,7 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="Setup" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h3 style="text-align: center;">Setup</h3>
-                            <p style="text-align: justify;">
-                                <strong>Requirements:</strong>
-                            </p>
-                            <ul style="text-align: justify;">
-                                <li>Have a Discord account</li>
-                                <li>Have a Discord server (or have admin permission on one)</li>
-                                <li>Some kind of web browser</li>
-                            </ul>
-                            <p style="text-align: justify;">
-                                <strong>Step 1:</strong>
-                            </p>
-                            <ul style="text-align: justify;">
-                                <li>Click
-                                    <a href="http://m8bot.js.org/invite.html">here</a> to invite the bot to your server</li>
-                                <li>Pick your server from the list, and click "Authorize".</li>
-                            </ul>
-                            <p style="text-align: justify;">
-                                <strong>Step 2:</strong>
-                            </p>
-                            <ul style="text-align: justify;">
-                                <li>In order to test the bot, simply type "!ping" into any chat where the bot can see it, and
-                                    reply.
-                                </li>
-                                <li>If the bot replies to your message, all is good!
-                                    <ul>
-                                        <li>If not, please make sure the bot has proper permissions to chat before you continue!</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <p style="text-align: left;"><strong>Step 3: Configuring Custom Options (Optional)</strong></p>
-                            <ul>
-                                <li style="text-align: left;">Please note, everything is case sensitive! At the current moment, the available options are:
-                                    <ul>
-                                        <li>livePing - whether or not the bot will use @here to announce live streams. Default is "true" or
-                                            "Enabled".</li>
-                                        <li>disabledCommands - commands that are disabled in your server. Default is "None".</li>
-                                        <li>defaultRole - the role automatically given to new members when they join your server. Default is "null"
-                                            (none).</li>
-                                        <li>mod - the role of your server's moderators. People with this role can use moderator commands. Default is
-                                            "null" (none).</li>
-                                        <li>muted - your server's muted/jail role. Needed to use the mute commands. Default is "null" (none).</li>
-                                        <li>prefix - the prefix for all M8 Bot commands in your server. The default is "!".</li>
-                                        <li>modLog - your server's mod log channel. The default is "null" (none).</li>
-                                        <li>mixerLiveChannel - the channel where Mixer announcements will be posted. The default is "null" (none).
-                                        </li>
-                                        <li>twitchLiveChannel - the channel where Twitch announcements will be posted. The default is "null" (none).
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li style="text-align: left;">In order to view the settings, run !conf show</li>
-                                <li style="text-align: left;">In order to change the settings, run !conf set {setting} {option},
-                                    replacing {setting} with the setting name, and {option} with the new option.</li>
-                                <li style="text-align: left;">Settings that are true or false (shown as Enabled and Disabled) by default must always be either true or false.</li>
-                                <li style="text-align: left;">Settings that ask for a channel name must be given the channel name with the # symbol, such as #general.</li>
-                                <li style="text-align: left;">Settings that ask for a role name must be given the role name, with or without the @ symbol, such as @Mod or Mod (case sensitive).</li>
-                            </ul>
-                            <p></p>
-                            <p style="text-align: left">
-                                <b>Everything from now on in this guide will use the "!" prefix. If you changed it, replace
-                                    "!" with your custom prefix!</b>
-                            </p>
-                            <p style="text-align: left">
-                                <b>Step 4a: Setting Up Mixer Streamers (Optional)</b>
-                            </p>
-                            <li style="text-align: left">First, set mixerLiveChannel with !conf set mixerLiveChannel #channelName, with #channelName being the text channel you
-                            want Mixer announcements in.</li>
-                            <li style="text-align: left">In the chat, type "!addmixer" followed by the streamer's Mixer name. For example, "!addmixer
-                                ComixsYT".
-                            </li>
-                            <p></p>
-                            <p style="text-align: left">
-                                <b>Step 4b: Setting Up Twitch Streamers (Optional)</b>
-                            </p>
-                            <li style="text-align: left">First, set twitchLiveChannel with !conf set twitchLiveChannel #channelName, with #channelName being the text channel you
-                            want Twitch announcements in. It can be the same one as mixerLiveChannel if you want.</li>
-                            <li style="text-align: left">In the chat, type "!addtwitch" followed by the streamer's Twitch name. For example, "!addtwitch
-                                ComixsYT".
-                            </li>
-                            <p></p>
-                            <p style="text-align: left">
-                                <b>Step 4.5a: Removing Mixer Streamers (Optional)</b>
-                            </p>
-                            <li style="text-align: left">In the chat, type "!delmixer" followed by the streamer's Mixer name. For example, "!delmixer ComixsYT".</li>
-                            <p></p>
-                            <p style="text-align: left">
-                                <b>Step 4.5b: Removing Twitch Streamers (Optional)</b>
-                            </p>
-                            <li style="text-align: left">In the chat, type "!deltwitch" followed by the streamer's Twitch name. For example, "!deltwitch ComixsYT".</li>
-
-                            <p></p>
-                            <!-- <p style="text-align: left">
-                                <b>Bellow is a video guide on how to setup M8 Bot made by
-                                    <a href="https://twitch.tv/ALazyMeme">ALazyMeme</a>
-                                </b>
-                            </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/g_kro366gUs?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-                                allowfullscreen></iframe> -->
-                                <!-- the above is outdated -->
-                            <p></p>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal">
-                                <i class="fa fa-times"></i>Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="portfolio-modal modal fade" id="Commands" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -438,15 +317,6 @@
                                     <li style="text-align: left;">!mute [time] [@person] [reason] - Mutes the mentioned user. If a time is given (optional), they will be unmuted after that time.</li>
                                     <li style="text-align: left;">!unmute [@person] [reason] - Unmutes the mentioned user.</li>
                                 </ul>
-                                Live Streams:</div>
-                            <div style="text-align: justify;">
-                                <ul>
-                                    <li style="text-align: left;">All of these commands can be run by anyone with the set Mod role, or server admins.</li>
-                                    <li>!addmixer or !delmixer - Used to add or delete Mixer streamers from that chat channel.</li>
-                                    <li>!addtwitch or !deltwitch - Used to add or delete Twitch streamers from that chat channel.</li>
-                                    <li>!mystreamers - Lists all the streamers registered to that chat channel.</li>
-                                </ul>
-                            </div>
                             <div style="text-align: justify;">Information:</div>
                             <div style="text-align: justify;">
                                 <ul>
